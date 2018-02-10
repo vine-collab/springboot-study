@@ -12,5 +12,12 @@ public class App {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
         System.out.println(context.getBean(MyBean.class));
         System.out.println(context.getBean("myBean"));
+        System.out.println(context.getBean(Runnable.class));
+        System.out.println(context.getBean("createRunnableFactoryBean"));
+        System.out.println(context.getBean(RunnableFactoryBean.class));
+        System.out.println(context.getBean("&createRunnableFactoryBean"));
+        System.out.println(context.getBean(Jeep.class));
+        System.out.println(context.getBean("Jeep"));
+
     }
 }

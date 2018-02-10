@@ -13,7 +13,23 @@ public class MyConfig {
 
     @Bean(name = "myBean")
     @Scope("prototype")
-    public MyBean getMyBean(){
+    public MyBean createMyBean(){
         return new MyBean();
     }
+
+    @Bean
+    public RunnableFactoryBean createRunnableFactoryBean(){
+        return new RunnableFactoryBean();
+    }
+
+    @Bean
+    public JeepFactory createJeepFactory(){
+        return new JeepFactory();
+    }
+
+    @Bean(name = "Jeep")
+    public Jeep createJeep(JeepFactory jeepFactory){
+        return jeepFactory.createJeep();
+    }
+
 }
