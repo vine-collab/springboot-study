@@ -2,6 +2,7 @@ package com.blueberry.spring;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 
 /**
@@ -37,17 +38,13 @@ public class MyConfig {
         return new Cat();
     }
 
-    @Bean(initMethod = "dogInit", destroyMethod = "dogDestory")
-    public Dog createDog(){
-        return new Dog();
-    }
-
     @Bean
     public Pig createPig(){
         return new Pig();
     }
 
     @Bean
+    @Primary
     public Bird createBird(){
         return new Bird();
     }
