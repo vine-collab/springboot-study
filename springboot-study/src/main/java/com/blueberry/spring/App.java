@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(MyConfig.class, Bird.class);
         System.out.println(context.getBean(MyBean.class));
         System.out.println(context.getBean("myBean"));
         System.out.println(context.getBean(Runnable.class));
@@ -18,6 +18,11 @@ public class App {
         System.out.println(context.getBean("&createRunnableFactoryBean"));
         System.out.println(context.getBean(Jeep.class));
         System.out.println(context.getBean("Jeep"));
-
+        System.out.println(context.getBean(Cat.class));
+        System.out.println(context.getBean(Dog.class));
+        System.out.println(context.getBean(Pig.class));
+        System.out.println(context.getBean("componentBird"));
+        System.out.println(context.getBeansOfType(Bird.class));
+        context.close();
     }
 }

@@ -32,4 +32,23 @@ public class MyConfig {
         return jeepFactory.createJeep();
     }
 
+    @Bean
+    public Cat createCat(){
+        return new Cat();
+    }
+
+    @Bean(initMethod = "dogInit", destroyMethod = "dogDestory")
+    public Dog createDog(){
+        return new Dog();
+    }
+
+    @Bean
+    public Pig createPig(){
+        return new Pig();
+    }
+
+    @Bean
+    public Bird createBird(){
+        return new Bird();
+    }
 }
