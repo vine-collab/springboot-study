@@ -1,9 +1,11 @@
-package com.blueberry.springboot;
+package com.blueberry.springboot.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
+
+import java.util.List;
 
 /**
  * @author hekai
@@ -23,9 +25,11 @@ public class App2 {
         SpringApplication springApplication = new SpringApplication(App2.class);
 
         ConfigurableApplicationContext context = springApplication.run(args);
-        
+
 //        ConfigurableApplicationContext context = SpringApplication.run(App2.class, args);
         context.getBean(Runnable.class).run();
+        System.out.println(context.getBean(List.class));
+
     }
 
 }
