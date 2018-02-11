@@ -1,7 +1,8 @@
-package com.blueberry.spring.ext;
+package com.blueberry.spring.beanpostprocessor;
 
-import com.blueberry.spring.bean.*;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.awt.*;
 
 /**
  * @author hekai
@@ -10,7 +11,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class App {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.blueberry.spring.ext");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.blueberry.spring.beanpostprocessor");
         context.getBean(Book.class).toString();
         context.getBean(Dog.class).show();
         context.close();

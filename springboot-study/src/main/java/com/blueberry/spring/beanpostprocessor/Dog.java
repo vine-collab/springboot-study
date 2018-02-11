@@ -1,4 +1,4 @@
-package com.blueberry.spring.ext;
+package com.blueberry.spring.beanpostprocessor;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;

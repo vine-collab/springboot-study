@@ -1,6 +1,5 @@
-package com.blueberry.spring.ext;
+package com.blueberry.spring.beanpostprocessor;
 
-import lombok.ToString;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
