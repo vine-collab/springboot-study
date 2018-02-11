@@ -1,4 +1,4 @@
-package com.blueberry.spring;
+package com.blueberry.spring.bean;
 
 import org.springframework.stereotype.Component;
 

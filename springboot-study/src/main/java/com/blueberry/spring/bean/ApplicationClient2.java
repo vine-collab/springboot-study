@@ -1,4 +1,4 @@
-package com.blueberry.spring;
+package com.blueberry.spring.bean;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -6,10 +6,10 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author hekai
  * @create 2018-02-10-19:02
  */
-public class ApplicationClient {
+public class ApplicationClient2 {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.blueberry.spring");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AnnotationScan.class);
         System.out.println(context.getBean(MyBean.class));
         System.out.println(context.getBean("myBean"));
         System.out.println(context.getBean(Runnable.class));

@@ -1,4 +1,4 @@
-package com.blueberry.spring;
+package com.blueberry.spring.bean;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
