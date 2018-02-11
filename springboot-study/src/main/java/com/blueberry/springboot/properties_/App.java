@@ -15,7 +15,8 @@ public class App {
         ConfigurableApplicationContext context = SpringApplication.run(App.class, args);
         System.out.println(context.getEnvironment().getProperty("local.ip"));
         context.getBean(UserConfig.class).show();
-
+        context.getBean(JdbcConfig.class).show();
+        System.out.println(context.getBean(DataSourceConfig.class));
         context.close();
     }
 }
