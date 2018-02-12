@@ -1,4 +1,4 @@
-package com.blueberry.springboot.properties_;
+package com.blueberry.springboot.properties;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -17,6 +17,8 @@ public class App {
         context.getBean(UserConfig.class).show();
         context.getBean(JdbcConfig.class).show();
         System.out.println(context.getBean(DataSourceConfig.class));
+        System.out.println(context.getEnvironment().getProperty("jdbc.username"));
+        System.out.println(context.getBean(TomcatProperties.class));
         context.close();
     }
 }

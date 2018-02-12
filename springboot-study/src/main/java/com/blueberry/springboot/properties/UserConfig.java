@@ -1,4 +1,4 @@
-package com.blueberry.springboot.properties_;
+package com.blueberry.springboot.properties;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

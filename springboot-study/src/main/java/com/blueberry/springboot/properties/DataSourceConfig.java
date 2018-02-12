@@ -1,4 +1,4 @@
-package com.blueberry.springboot.properties_;
+package com.blueberry.springboot.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
