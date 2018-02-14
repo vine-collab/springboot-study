@@ -1,4 +1,4 @@
-package com.blueberry.springboot.eventlisten;
+package com.blueberry.springboot.eventlistener;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,6 +15,7 @@ import org.springframework.context.ConfigurableApplicationContext;
  * 2、使用@component注解标注监听器类
  * 3、使用context.listener.class配置，参照：DelegatingApplicationListener
  * 4、使用@EventListener注解，并且该类要纳入到spring容器中
+ * 5、使用spring.factories文件
  *
  * @author hekai
  * @create 2018-02-14-14:09

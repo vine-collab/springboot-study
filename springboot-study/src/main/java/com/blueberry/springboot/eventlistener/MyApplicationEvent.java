@@ -1,4 +1,4 @@
-package com.blueberry.springboot.eventlisten;
+package com.blueberry.springboot.eventlistener;
 
 import org.springframework.context.ApplicationEvent;
 

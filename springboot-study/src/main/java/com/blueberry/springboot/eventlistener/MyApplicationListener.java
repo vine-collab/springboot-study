@@ -1,8 +1,6 @@
-package com.blueberry.springboot.eventlisten;
+package com.blueberry.springboot.eventlistener;
 
-import org.springframework.context.ApplicationEvent;
 import org.springframework.context.ApplicationListener;
-import org.springframework.stereotype.Component;
 
 /**
  * 监听器
