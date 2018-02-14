@@ -26,6 +26,8 @@ import java.util.Arrays;
  * CommandLineRunner参数为最原始的参数
  * ApplicationRunner参数为封装之后的参数对象,是对CommandLineRunner参数的封装
  *
+ * ApplicationArguments是对main方法args进一步处理
+ * 可以直接获取
  * @author hekai
  * @create 2018-02-14-15:46
  */
@@ -38,7 +40,8 @@ public class App {
         ConfigurableApplicationContext context = application.run("xxx");
         ApplicationArguments arguments = context.getBean(ApplicationArguments.class);
         System.out.println(Arrays.asList(arguments.getSourceArgs()));
-
+        System.out.println(arguments.getOptionNames());
+        System.out.println(arguments.getOptionValues("myname"));
         context.close();
     }
 
