@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Import;
 //@Import(MyImportSelector.class)
 @ComponentScan
 @EnableLog(name = "my spring boot")
+@EnableEcho(packages = {"com.blueberry.springboot.condition", "com.blueberry.springboot.enable", "com.blueberry.springboot.import_"})
 public class App {
 
     public static void main(String[] args) {
