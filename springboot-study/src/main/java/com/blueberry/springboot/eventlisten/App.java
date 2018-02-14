@@ -13,7 +13,8 @@ import org.springframework.context.ConfigurableApplicationContext;
  * 监听器配置：
  * 1、使用 springApplication.addListeners添加监听器
  * 2、使用@component注解标注监听器类
- * 3、使用context.listener.class配置
+ * 3、使用context.listener.class配置，参照：DelegatingApplicationListener
+ * 4、使用@EventListener注解，并且该类要纳入到spring容器中
  *
  * @author hekai
  * @create 2018-02-14-14:09
@@ -26,7 +27,7 @@ public class App {
 //        springApplication.addListeners(new MyApplicationListener());
         ConfigurableApplicationContext context = springApplication.run(args);
         context.publishEvent(new MyApplicationEvent(new Object()));
-
+        context.stop();
         context.close();
     }
 }
