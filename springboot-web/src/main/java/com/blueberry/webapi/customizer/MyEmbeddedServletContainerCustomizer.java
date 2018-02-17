@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * @author hekai
  * @create 2018-02-17-14:46
  */
-@Component
+//@Component
 public class MyEmbeddedServletContainerCustomizer implements EmbeddedServletContainerCustomizer {
 
     @Override
