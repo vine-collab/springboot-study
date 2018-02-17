@@ -13,6 +13,7 @@ public class UserController {
 
     @GetMapping("/ping")
     public String hello(){
+        System.out.println("hello spring boot!");
         return "hello spring boot!";
     }
 }
