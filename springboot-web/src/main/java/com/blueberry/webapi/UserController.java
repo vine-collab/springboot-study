@@ -16,4 +16,10 @@ public class UserController {
         System.out.println("hello spring boot!");
         return "hello spring boot!";
     }
+
+    @GetMapping("/error")
+    public String error(){
+        int i = 1 / 0;
+        return "hello spring boot!";
+    }
 }
