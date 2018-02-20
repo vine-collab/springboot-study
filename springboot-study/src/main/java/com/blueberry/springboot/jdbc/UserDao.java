@@ -18,10 +18,10 @@ public class UserDao {
     private JdbcTemplate jdbcTemplate;
 
     @Transactional
-    public void addUser(String name) {
+    public int addUser(String name) {
         String sql = "insert into tb_user (name) values (?)";
-        jdbcTemplate.update(sql, new Object[]{name});
-        int i = 1 / 0;
+        int update = jdbcTemplate.update(sql, new Object[]{name});
+        return update;
     }
 
     public int countUser() {

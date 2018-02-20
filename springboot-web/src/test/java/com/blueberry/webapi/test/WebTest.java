@@ -1,0 +1,16 @@
+package com.blueberry.webapi.test;
+
+import org.junit.runner.RunWith;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
+import org.springframework.test.context.junit4.SpringRunner;
+
+/**
+ * @author hekai
+ * @create 2018-02-20-14:48
+ */
+@RunWith(SpringRunner.class)
+@SpringBootTest
+public class WebTest {
+
+}
