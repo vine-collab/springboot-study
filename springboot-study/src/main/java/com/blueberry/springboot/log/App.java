@@ -21,6 +21,9 @@ import org.springframework.context.ConfigurableApplicationContext;
  *
  * springboot默认支持logback日志，只需要在classpath下放置logback.xml或者logback-spring.xml即可
  *
+ * 使用其他日志框架，排出默认日志框架依赖，添加相应的依赖，将配置文件放到classpath下
+ *
+ *
  * @author hekai
  * @create 2018-02-20-10:24
  */
