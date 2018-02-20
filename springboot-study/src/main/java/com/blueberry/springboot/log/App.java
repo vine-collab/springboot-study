@@ -18,6 +18,9 @@ import org.springframework.context.ConfigurableApplicationContext;
  * 日志格式：
  * logging.pattern.console配置控制台日志格式
  * logging.file.console配置文件日志格式
+ *
+ * springboot默认支持logback日志，只需要在classpath下放置logback.xml或者logback-spring.xml即可
+ *
  * @author hekai
  * @create 2018-02-20-10:24
  */
