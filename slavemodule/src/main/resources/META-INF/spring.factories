@@ -1,3 +1,3 @@
-#org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.blueberry.salve.RunnableCofiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.blueberry.salve.RunnableCofiguration
 #
-#org.springframework.context.ApplicationContextInitializer=com.blueberry.salve.MyApplicationContextInitializer
+org.springframework.context.ApplicationContextInitializer=com.blueberry.salve.MyApplicationContextInitializer
