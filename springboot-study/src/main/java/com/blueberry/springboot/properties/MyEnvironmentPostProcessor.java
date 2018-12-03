@@ -19,7 +19,7 @@ public class MyEnvironmentPostProcessor implements EnvironmentPostProcessor {
 
     @Override
     public void postProcessEnvironment(ConfigurableEnvironment environment, SpringApplication application) {
-        try (InputStream inputStream = new FileInputStream("G:\\programming\\codespace\\blueberry\\springboot-study\\src\\main\\resources\\META-INF\\springboot.properties")) {
+        try (InputStream inputStream = new FileInputStream("/Users/kayhe/codespace/springboot-study/springboot-study/src/main/resources/META-INF/springboot.properties")) {
             Properties properties = new Properties();
             properties.load(inputStream);
             PropertiesPropertySource propertySource = new PropertiesPropertySource("my", properties);

@@ -6,5 +6,7 @@
 .idea
 *.iws
 *.iml
+*/*.iml
 *.ipr
 /out/
+*.class

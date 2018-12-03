@@ -14,14 +14,11 @@ import javax.sql.DataSource;
  * @create 2018-02-17-19:47
  */
 @SpringBootApplication
-@EnableAspectJAutoProxy(exposeProxy = false)
+@EnableAspectJAutoProxy(exposeProxy = true)
 public class App {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(App.class, args);
         context.getBean(UserService.class).addUser();
     }
-
-
-
 }
