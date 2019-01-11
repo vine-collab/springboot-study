@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Import;
  * @create 2018-02-13-17:10
  */
 //@Import({User.class, Role.class, MyConfiguration.class})
-//@Import(MyImportSelector.class)
+@Import(MyImportSelector.class)
 @ComponentScan
 @EnableLog(name = "my spring boot")
 @EnableEcho(packages = {"com.blueberry.springboot.condition", "com.blueberry.springboot.enable", "com.blueberry.springboot.import_"})

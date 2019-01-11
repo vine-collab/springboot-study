@@ -13,6 +13,7 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(value = Exception.class)
     public String exceptionHandler(Exception e) {
+        System.out.println(e);
         return "global exception" + e.getMessage();
     }
 

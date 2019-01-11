@@ -10,7 +10,7 @@ import redis.clients.jedis.Jedis;
  * @author hekai
  * @create 2018-02-18-12:25
  */
-@EnableRedis // 可以用spring.factories实现
+//@EnableRedis // 可以用spring.factories实现
 @SpringBootApplication
 public class App {
 
