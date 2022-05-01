@@ -4,7 +4,7 @@ import com.blueberry.springboot.aop.validation.PayRequestDto;
 import org.springframework.stereotype.Component;
 
 /**
- * @author HEK(hk177955)
+ * @author cao
  * @date 2019-01-10 19:48
  */
 @Component
